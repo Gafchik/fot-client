@@ -1,0 +1,71 @@
+.container {
+    max-width: 380px;
+    background-color: rgba(240, 240, 240, 0.05);
+    border-radius: 10px;
+    border: 2px solid #A6C539;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #2E2C2C;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'e-Ukraine Head';
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.clickable {
+    width: inherit;
+}
+
+.titleAnim {
+    width: 70%;
+}
+
+.pointer {
+    animation: pointerAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    font-size: 34px;
+    font-family: 'e-Ukraine-B';
+    line-height: 27px;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 873px) {
+    .container {
+        width: 85% !important;
+        height: auto;
+    }
+
+    .titleAnim {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        gap: 30px;
+        animation: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,144 @@
+.container {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+}
+
+.holder {
+    width: 100%;
+    max-width: 1344px;
+    /* background-color: aliceblue; */
+    color: rgb(196, 194, 196);
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'e-Ukraine-UL Head';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactsHolder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactsHolderIcons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contactsHolder a {
+    transition: .2s ease;
+}
+
+.contactsHolder a:hover {
+    color: rgb(186, 223, 52);
+    transition: .2s ease;
+}
+
+.title {
+    color: rgb(112, 111, 112);
+    font-size: 14px;
+}
+
+.inst {
+    transition: .3s ease;
+    color: #A6C539;
+}
+
+.iconHolder {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.inst:hover {
+    color: rgb(232, 0, 145);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.telegram {
+    transition: .3s ease;
+}
+
+.telegram:hover {
+    color: rgb(0, 169, 230);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.twitter {
+    transition: .3s ease;
+}
+
+.twitter:hover {
+    color: rgb(28, 156, 234);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .holder {
+        gap: 20px;
+    }
+
+    .additional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: inherit;
+    }
+    
+    .main {
+        justify-content: center;
+        margin-top: -20px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        justify-content: center;
+    }
+
+    .logotext {
+        display: none;
+    }
+}

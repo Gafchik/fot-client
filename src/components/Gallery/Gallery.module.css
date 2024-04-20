@@ -1,0 +1,588 @@
+.container {
+    color: aliceblue;
+    z-index: 3;
+    background-color: white;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.galleryContainer {
+    width: 100%;
+    /* max-width: 700px; */
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.images {
+    max-width: 700px;
+    object-fit: contain;
+    display: block;
+    /* display: flex; */
+
+}
+
+.videoCon {
+    cursor: auto !important;
+}
+
+.galleryTitleSuper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    gap: 40px;
+    padding: 10px 20px;
+    background-color: #545454;
+    align-self: self-start;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease-in-out;
+    user-select: none;
+}
+
+.left {
+    transform: translateX(0);
+}
+
+.right {
+    transform: translateX(93%);
+}
+
+.slider>div {
+    font-family: 'e-Ukraine-UL';
+    z-index: 2;
+}
+
+.backgroundFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #A6C539;
+    height: 100%;
+    border-radius: 10px;
+    width: 52%;
+    z-index: 1;
+    transition: .2s ease-in-out;
+}
+
+.titleHolder {
+    display: flex;
+    width: 100%;
+    /* max-width: 960px; */
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.galleryHolder {
+    display: flex;
+    align-items: center;
+    /* margin-top: 100px; */
+    width: 60%;
+    max-width: 960px;
+    gap: 10px;
+}
+
+.galleryTitle {
+    word-wrap: normal;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'e-Ukraine Head';
+}
+
+.galleryText {
+    font-size: 15.7px;
+    color: rgb(161, 161, 161);
+    width: 40%;
+}
+
+.buttonHolder {
+    background-color: rgb(53 53 53);
+    color: rgba(0, 0, 0, 1);
+    margin-top: -4px;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.buttonform {
+    padding: 20px 60px;
+    user-select: none;
+    background-color: rgb(166, 197, 57);
+    display: flex;
+    align-self: self-start;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'e-Ukraine-UL';
+    border: 2px solid rgb(166, 197, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    transition: .2s ease;
+}
+
+.additionalContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 30px 0;
+    padding: 20px 0;
+    border: 0.1em solid #575864;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+.additionalTitle {
+    color: rgb(191, 194, 204);
+    font-family: 'e-Ukraine-UL';
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.additionalSubtitle {
+    color: white;
+    font-family: 'e-Ukraine-UL';
+}
+
+.buttonform:hover {
+    transition: .2s ease;
+    background-color: rgb(125, 152, 31);
+    cursor: pointer;
+}
+
+.index {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icon {
+    background-color: rgba(240, 247, 255, 0.095);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    color: rgb(186, 223, 52);
+    font-size: 40px;
+    font-weight: 900;
+    backdrop-filter: blur(10px);
+}
+
+.galleryTextAdvanced {
+    font-size: 15.7px;
+    color: rgb(161, 161, 161);
+    width: 100%;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: left;
+}
+
+.imageContainer {
+    height: 500px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: radial-gradient(radial, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 1) 40%);
+    object-fit: cover;
+}
+
+.gallerySection {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second {
+    background-color: #2E2C2C;
+}
+
+.imageContainerAdvanced {
+    height: 500px;
+    border-radius: 2px;
+    /* margin-bottom: 40px; */
+    background-image: radial-gradient(radial, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 1) 40%);
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.imageContainerFloors {
+    width: 300px;
+    border-radius: 2px;
+    /* margin-bottom: 40px; */
+    background-image: radial-gradient(radial, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 1) 40%);
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.lastIndex {
+    margin-bottom: 80px;
+}
+
+.iconHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addHolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marg {
+    margin-top: 100px;
+}
+
+.link {
+    transition: .2s ease;
+}
+
+.link:hover {
+    transition: .2s ease;
+    color: rgb(186, 223, 52) !important;
+}
+
+.pin {
+    transition: .2s ease;
+}
+
+.pin:hover {
+    transition: .2s ease;
+    animation: dizzy 1.2s infinite;
+    cursor: pointer;
+}
+
+@keyframes dizzy {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    20% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+
+    40% {
+        transform: rotate(15deg) scale(1.2);
+    }
+
+    60% {
+        transform: rotate(-15deg) scale(1.2);
+    }
+
+    80% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.fullsize {
+    position: fixed;
+    left: 0;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    animation: show .3s ease;
+    cursor: pointer;
+}
+
+.floors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 36%;
+    align-items: flex-end;
+}
+
+.floorsTitleSuper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    color: rgb(168, 168, 168);
+    font-family: 'e-Ukraine-UL';
+    font-size: 15px;
+}
+
+.floorPicker:hover {
+    transition: .2s ease;
+    color: white;
+}
+
+.floorPicker {
+    transition: .2s ease;
+    cursor: pointer;
+
+}
+
+.imageContainerAdvancedFullsize {
+    height: 500px;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    background-image: radial-gradient(radial, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 1) 40%);
+    object-fit: cover;
+    cursor: zoom-in;
+    animation: showimage .3s ease;
+    box-shadow: 1px 0px 70px -1px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.imagesHolder {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    gap: 0;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.imageThumbnail {
+    height: 50px;
+    width: 90px;
+    min-width: 90px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: .35s ease-in-out;
+    filter: brightness(60%);
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    width: auto;
+    /* justify-content: center; */
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+.thumbnails::-webkit-scrollbar {
+    display: none;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 48%;
+    left: 50px;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 48%;
+    right: 50px;
+}
+
+@keyframes show {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes showimage {
+    0% {
+        transform: scale(0.4) translateY(50px);
+    }
+
+    100% {
+        transform: scale(1) translateX(0px);
+    }
+}
+
+.plantsFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 60px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1254px) {
+    .galleryContainer {
+        justify-content: center;
+    }
+
+    .floors {
+        width: 100%;
+        max-width: 700px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .titleHolder {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .gallerySection {
+        width: 80%;
+        display: block;
+    }
+
+    .imageContainer {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .galleryHolder {
+        margin-top: 0px;
+    }
+
+    .galleryContainer {
+        width: 100%;
+    }
+
+    .galleryText {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    /* .galleryTextAdvanced {
+        margin-bottom: 40px;
+    } */
+
+}
+
+@media screen and (max-width: 768px) {
+    .marg {
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+
+    .images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .galleryTitleSuper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .slider {
+        margin: auto;
+    }
+
+    .gallerySectionHolder {
+        background-image: none;
+    }
+
+    .gallerySection {
+        width: 85%;
+        padding-top: 0;
+    }
+
+    .galleryContainer {
+        width: 100%;
+    }
+
+    .titleHolder {
+        /* flex-direction: column; */
+        align-items: normal;
+    }
+
+    .galleryHolder {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .iconHolder {
+        justify-content: initial;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titleHolder {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+
+    .galleryHolder {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .galleryText {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .gallerySection {
+        width: 100%;
+    }
+
+    .galleryContainer {
+        width: 100%;
+    }
+
+    .imageContainer {
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imageContainerAdvanced {
+        border-radius: 0px;
+        width: auto;
+        height: 273.58px;
+    }
+
+    .index {
+        margin-bottom: 40px;
+    }
+
+    .icond {
+        display: none;
+    }
+}

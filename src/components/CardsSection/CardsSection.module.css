@@ -1,0 +1,76 @@
+.container {
+    z-index: 1;
+    background-color: white;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleContainer {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'e-Ukraine Head';
+    line-height: 27px;
+    color: #2E2C2C;
+    font-weight: 700;
+}
+
+.content {
+    width: 100%;
+    max-width: 1521px;
+    margin-bottom: 90px;
+    padding: 0 40px;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1197px) {
+    .content {
+        width: 85%;
+
+    }
+
+    .text {
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 1448px) {
+    .title {
+        text-align: center;
+    }
+
+    .text {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 873px) {
+    .content {
+        width: 85%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titleContainer {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,312 @@
+.bgimage {
+    width: 100%;
+    height: auto;
+    background: url('./bg.png'), rgba(16, 16, 16, 0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.container {
+    z-index: 1;
+    max-width: 1521px;
+    margin: auto;
+    padding-bottom: 200px;
+    padding: 0 20px;
+}
+
+@keyframes showPicker {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    text-align: center;
+    padding: 120px;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: auto;
+    max-width: 500px;
+    animation: show;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.formtitle {
+    font-family: 'e-Ukraine-L Head';
+    color: #5B5B5B;
+    width: 75%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.textHolder {
+    font-size: 15.7px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorHolder {
+    color: rgb(196, 32, 32);
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'e-Ukraine-UL Head';
+    color: rgb(223, 223, 223);
+    line-height: 24px;
+    width: 55%;
+    font-weight: 100;
+}
+
+.desc {
+    line-height: 43px;
+    font-size: 36px;
+    font-family: 'e-Ukraine Head';
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.imageHolder {
+    position: relative;
+    width: 48%;
+    height: auto;
+}
+
+.imageContainer {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.textContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 20px;
+    margin-left: 5px;
+    transition: .1s ease;
+    font-weight: 800;
+    transform: translateX(10px);
+}
+
+.button {
+    padding: 20px 100px;
+    user-select: none;
+    background-color: #A6C539;
+    display: flex;
+    align-self: self-start;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'e-Ukraine Head';
+    border: 2px solid #A6C539;
+    transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button:hover {
+    color: aliceblue;
+    transition: .2s ease;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.buttonform {
+    padding: 20px 60px;
+    user-select: none;
+    background-color: #A6C539;
+    display: flex;
+    align-self: self-start;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'e-Ukraine Head';
+    border: 2px solid #A6C539;
+    transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonform:hover {
+    color: rgb(27, 26, 26);
+    transition: .2s ease;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.or {
+    margin: auto;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    color: #5B5B5B;
+    background-color: #FFF;
+    width: 60px;
+    z-index: 2000;
+}
+
+@media screen and (max-width: 1024px) {
+    .holder {
+        display: block;
+        padding: 60px 0px;
+    }
+
+    .imageContainer {
+        width: 100%;
+    }
+
+    .imageHolder {
+        width: 100%;
+    }
+
+    .textadvice {
+        font-size: 20px;
+        width: 100%;
+        max-width: 340px;
+        left: 0;
+    }
+
+    .title {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .arrow {
+        left: 45%;
+        bottom: -130px;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .desc {
+        font-size: 23px;
+        line-height: normal;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .buttonHolder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .langTitle {
+        display: none;
+    }
+
+    .chevron {
+        display: none;
+    }
+
+    .textadvice {
+        font-size: 14px;
+        max-width: 240px;
+    }
+
+    .navContainer {
+        margin-bottom: 60px;
+    }
+
+    .button {
+        padding: 20px 20px;
+    }
+
+    .arrow {
+        bottom: -100px;
+    }
+
+    .formtitle {
+        width: 90%;
+    }
+
+    .play {
+        width: 80px;
+        height: 80px;
+        bottom: -50px;
+    }
+
+    .btnmobile {
+        display: block;
+        margin-top: 150px;
+    }
+
+    .holder {
+        margin-bottom: 60px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+}

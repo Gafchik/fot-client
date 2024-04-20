@@ -1,0 +1,160 @@
+.container {
+    z-index: 1;
+    background-color: white;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 120px;
+    padding: 0 20px;
+    margin-top: 80px;
+    color: #2E2C2C;
+}
+
+.title {
+    font-family: 'e-Ukraine Head';
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.button {
+    padding: 20px 50px;
+    user-select: none;
+    background-color: #A6C539;
+    display: flex;
+    align-self: self-start;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'e-Ukraine Head';
+    border: 2px solid #A6C539;
+    transition: .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button:hover {
+    color: #2E2C2C;
+    transition: .2s ease;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.buttonHolder {
+    display: flex;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cardContainer {
+    max-width: 400px;
+    background-color: rgba(240, 240, 240, 0.05);
+    border-radius: 10px;
+    border: 2px solid #A6C539;
+    padding: 40px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    color: #2E2C2C;
+}
+
+.ftpart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.ndpart {
+    width: 25%;
+}
+
+.cardTitle {
+    font-size: 27px;
+    color: #A6C539;
+    font-family: 'e-Ukraine Head';
+    line-height: 27px;
+    font-weight: 600;
+}
+
+.cardDesc {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.list2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.list>div::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #A6C539;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1220px) {
+    .ndpart {
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .separator {
+        flex-direction: column;
+    }
+
+    .ftpart {
+        width: 100%;
+    }
+
+    .ndpart {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .cardContainer {
+        max-width: none;
+    }
+
+    .button {
+        margin-top: 40px;
+        text-align: center;
+    }
+}

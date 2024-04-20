@@ -1,0 +1,107 @@
+.inputBox {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    font-size: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 14px 12px;
+    border: 2px solid #5B5B5B;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #5B5B5B;
+    font-size: 1em;
+    font-family: 'e-Ukraine-L Head';
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 16px;
+    pointer-events: none;
+    font-size: 0.88em;
+    color: #5B5B5B;
+    transition: .18s ease;
+    font-family: 'e-Ukraine-L Head';
+}
+
+.inputBox input:focus
+{
+    border: 2px solid #5B5B5B;
+}
+
+.inputBox input:focus ~ span
+{
+    color: #5B5B5B;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    background: white;
+    transform: translateX(6px) translateY(-7px);
+    font-size: 0.7em;
+    /* color: rgba(240,248,255, 0.75);  */
+    padding: 0 12px;
+    /* background: transparent; */
+    border-radius: 20px;
+}
+
+.inputBoxT2 {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    font-family: 'e-Ukraine-L Head';
+}
+
+.inputBoxT2 input {
+    width: 100%;
+    padding: 14px 12px;
+    border: 2px solid #5B5B5B;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #5B5B5B;
+    font-size: 1em;
+}
+
+.inputBoxT2 span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 16px;
+    pointer-events: none;
+    font-size: 0.88em;
+    font-family: 'e-Ukraine-L Head';
+    color: #5B5B5B;
+    transition: .18s ease;
+}
+
+.inputBoxT2 input:focus
+{
+    border: 2px solid #5B5B5B;
+}
+
+.inputBoxT2 input:focus ~ span
+{
+    color: #5B5B5B;
+}
+
+
+.inputBoxT2 input:valid ~ span,
+.inputBoxT2 input:focus ~ span
+{
+    background: rgb(42,42,55);
+    transform: translateX(6px) translateY(-7px);
+    font-size: 0.7em;
+    /* color: rgba(240,248,255, 0.75);  */
+    padding: 0 8px;
+    /* background: transparent; */
+    border-radius: 20px;
+}

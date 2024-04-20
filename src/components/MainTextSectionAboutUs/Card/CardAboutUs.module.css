@@ -1,0 +1,134 @@
+.container {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #A6C539;
+    padding: 40px 100px;
+    padding-bottom: 80px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    color: #2E2C2C;
+}
+
+
+.title {
+    font-size: 20px;
+    font-family: 'e-Ukraine Head';
+    line-height: 27px;
+    text-align: center;
+    color: white;
+}
+
+.desc {
+    font-family: 'e-Ukraine-UL Head';
+    color: white;
+    font-size: 19px;
+    width: 100%;
+    position: relative;
+}
+
+.descSimple {
+    font-family: 'e-Ukraine-UL Head';
+    color: white;
+    font-size: 19px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    z-index: -2;
+    position: absolute;
+    color: rgba(166, 197, 57, 0.50);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: e-Ukraine Head;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: -65px;
+    left: -28px;
+    user-select: none;
+}
+
+.white {
+    border-color: white;
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.numberSimple {
+    color: #FFF;
+    font-family: e-Ukraine Head;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bio {
+    width: 50%;
+}
+
+.clickable {
+    width: inherit;
+}
+
+.titleAnim {
+    width: 70%;
+}
+
+.pointer {
+    animation: pointerAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    font-size: 34px;
+    font-family: 'e-Ukraine-B';
+    line-height: 27px;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 873px) {
+    .container {
+        padding: 40px 0;
+        width: 100%;
+        max-width: none;
+        padding-bottom: 80px;
+    }
+
+    .titleAnim {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .desc {
+        margin-left: 80px;
+        width: 58%;
+        font-size: 17px;
+        font-family: 'e-Ukraine-T Head';
+        font-weight: 200;
+    }
+
+    .bio {
+        width: 60%;
+    }
+
+    .white {
+        padding: 40px 0;
+        margin-top: 0;
+    }
+}

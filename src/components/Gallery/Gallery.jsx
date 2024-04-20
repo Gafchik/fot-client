@@ -91,6 +91,19 @@ function Gallery() {
             cottages: "Коттеджи",
             design: "Визуализация",
             photos: "Фотографии",
+            sliderRightText: {
+                div1: "Оливковый бизнес — один из самых прибыльных в агросекторе.",
+                div2: "Family Olive Club — внедрила в агробизнес специально составленную экономическую модель, которая позволит получать стабильную прибыль.",
+                div3: "Оливки и оливковое масло являются одними из основных продуктов питания в Средиземноморском регионе. По данным исследований этих фондов, потребление оливкового масла за период с 2016 года по 2020 год, увеличилось почти на 20% и остается категорией самого потребляемого оливкового продукта.",
+            },
+            square: "Площадь",
+            squareCount: "5 га",
+            profitability: "Доходность",
+            profitabilityCount :"до 40% годовых",
+            floors: "Этажи",
+            profitabilityCountCottage: "До 10% годовых",
+            floor1: "Первый этаж",
+            floor2: "Второй этаж",
         },
         en: {
             title1: "The olive business is one of the most profitable and stable in the agricultural sector",
@@ -105,6 +118,19 @@ function Gallery() {
             cottages: "Cottages",
             design: "Design",
             photos: "Photos",
+            sliderRightText: {
+                div1: "The olive business is one of the most profitable sectors in agriculture.",
+                div2: "Family Olive Club has introduced a specially designed economic model into agribusiness that will enable stable profitability.",
+                div3: "Olives and olive oil are among the primary food products in the Mediterranean region. According to research data from these funds, olive oil consumption increased by almost 20% from 2016 to 2020 and remains the most consumed category of olive product.",
+            },
+            square: "Area",
+            squareCount: "5 hectares",
+            profitability: "Annual yield",
+            profitabilityCount :"of up to 40%",
+            floors: "Floors",
+            profitabilityCountCottage: "of up to 10%",
+            floor1: "First floor",
+            floor2: "Second floor",
         }
     }
 
@@ -478,31 +504,31 @@ function Gallery() {
                                 <div className={`${classes.buttonHolder}`}>
                                     <div className={classes.additionalContainer}>
                                         <div className={classes.additionalInfo}>
-                                            <div className={classes.additionalTitle}>Площадь</div>
-                                            <div className={classes.additionalSubtitle}>5 га</div>
+                                            <div className={classes.additionalTitle}>{translations[language].square}</div>
+                                            <div className={classes.additionalSubtitle}>{translations[language].squareCount}</div>
                                         </div>
                                         {/* <div className={classes.additionalInfo}>
                                             <div className={classes.additionalTitle}>Этажи</div>
                                             <div className={classes.additionalSubtitle}>2</div>
                                         </div> */}
                                         <div className={classes.additionalInfo}>
-                                            <div className={classes.additionalTitle}>Доходность</div>
-                                            <div className={classes.additionalSubtitle}>до 40% годовых</div>
+                                            <div className={classes.additionalTitle}>{translations[language].profitability}</div>
+                                            <div className={classes.additionalSubtitle}>{translations[language].profitabilityCount}</div>
                                         </div>
                                     </div>
-                                    <div className={classes.buttonform} onClick={scrollToOffer}>{translations[language].offer}</div>
                                 </div>
+                                <div className={classes.buttonform} onClick={scrollToOffer}>{translations[language].offer}</div>
                             </div>
                             <div className={classes.floors}>
                                 <div className={classes.plantsFeatures}>
                                     <div>
-                                        Оливковый бизнес — один из самых прибыльных в агросекторе.
+                                        {translations[language].sliderRightText.div1}
                                     </div>
                                     <div>
-                                        Family Olive Club — внедрила в агробизнес специально составленную экономическую модель, которая позволит получать стабильную прибыль.
+                                        {translations[language].sliderRightText.div2}
                                     </div>
                                     <div>
-                                        Оливки и оливковое масло являются одними из основных продуктов питания в Средиземноморском регионе. По данным исследований этих фондов, потребление оливкового масла за период с 2016 года по 2020 год, увеличилось почти на 20% и остается категорией самого потребляемого оливкового продукта.
+                                        {translations[language].sliderRightText.div2}
                                     </div>
                                 </div>
                             </div>
@@ -538,16 +564,16 @@ function Gallery() {
                                 <div className={`${classes.buttonHolder}`}>
                                     <div className={classes.additionalContainer}>
                                         <div className={classes.additionalInfo}>
-                                            <div className={classes.additionalTitle}>Площадь</div>
+                                            <div className={classes.additionalTitle}>{translations[language].square}</div>
                                             <div className={classes.additionalSubtitle}>100 м2</div>
                                         </div>
                                         <div className={classes.additionalInfo}>
-                                            <div className={classes.additionalTitle}>Этажи</div>
+                                            <div className={classes.additionalTitle}>{translations[language].floors}</div>
                                             <div className={classes.additionalSubtitle}>2</div>
                                         </div>
                                         <div className={classes.additionalInfo}>
-                                            <div className={classes.additionalTitle}>Доходность</div>
-                                            <div className={classes.additionalSubtitle}>До 10% годовых</div>
+                                            <div className={classes.additionalTitle}>{translations[language].profitability}</div>
+                                            <div className={classes.additionalSubtitle}>{translations[language].profitabilityCountCottage}</div>
                                         </div>
                                     </div>
                                     <div className={classes.buttonform} onClick={scrollToOffer}>{translations[language].offer}</div>
@@ -555,8 +581,8 @@ function Gallery() {
                             </div>
                             <div className={classes.floors}>
                                 <div className={classes.floorsTitleSuper}>
-                                    <div className={classes.floorPicker} onClick={() => setIsFirstFloor(true)} style={{ color: isFirstFloor ? 'white' : 'inherit' }} >Первый этаж</div>
-                                    <div className={classes.floorPicker} onClick={() => setIsFirstFloor(false)} style={{ color: isFirstFloor ? 'inherit' : 'white' }} >Второй этаж</div>
+                                    <div className={classes.floorPicker} onClick={() => setIsFirstFloor(true)} style={{ color: isFirstFloor ? 'white' : 'inherit' }} >{translations[language].floor1}</div>
+                                    <div className={classes.floorPicker} onClick={() => setIsFirstFloor(false)} style={{ color: isFirstFloor ? 'inherit' : 'white' }} >{translations[language].floor2}</div>
                                 </div>
                                 <img onClick={() => SetCurrentImage("planing", isFirstFloor ? 0 : 1)} className={classes.imageContainerFloors} src={isFirstFloor ? stfloor : ndfloor} />
                             </div>

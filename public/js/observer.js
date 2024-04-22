@@ -19,5 +19,4 @@ const observer = new IntersectionObserver((entries) => {
 setTimeout(() => {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
-    console.log(hiddenElements.length)
 }, 100);

@@ -24,8 +24,6 @@ function LanguagePicker(props) {
     const setLang = (language) => {
         setClicked(false);
         changeLanguage(language);
-        console.log(language)
-        // setQueryParams({ lang: 'ru', page: 'home' });
         setLangQueryParam(language);
     }
 

@@ -97,7 +97,6 @@ function StockCottages(props) {
             setClicked(true);
         }
 
-        console.log(query);
     }, []);
 
     function onMouseLeave() {
@@ -141,8 +140,7 @@ function StockCottages(props) {
             const { left, top } = element.getBoundingClientRect();
             const offsetX = e.targetTouches[0].clientX - left;
             const offsetY = e.targetTouches[0].clientY - top;
-            console.log('Offset X:', offsetX, "Element:", e.targetTouches[0].clientX);
-            console.log('Offset Y:', offsetY);
+
             setOffset(offsetX);
             setDragging(true);
             swipe.SetStartPos((e.targetTouches[0].clientX - offsetX));
@@ -150,7 +148,6 @@ function StockCottages(props) {
     }
 
     function calculateOpacity(newX) {
-        console.log(window.innerWidth / 2, newX);
         const distanceFromCenter = Math.abs(window.innerWidth / 2 - Math.abs(newX));
         const maxDistance = window.innerWidth / 2;
         const opacity = Math.abs(distanceFromCenter / maxDistance);
@@ -173,7 +170,6 @@ function StockCottages(props) {
 
             card.style.transform = `scale(${Math.max(calculateOpacity(newX), 0.8)}) translateX(${newX}px) rotate(${-(newAngle * 180 / Math.PI) / 2}deg)`;
             let dir = swipe.CheckDirection();
-            // console.log(dir);
             if (dir !== 2) {
                 if (dir === 0) {
                     HandleCurrBuilding(false);

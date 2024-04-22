@@ -43,12 +43,12 @@ const LanguageProvider = ({ children }) => {
         const queryParams = getQueryParams();
 
         if(!queryParams.lang){
-            setLanguage('ru');
+            setLanguage('en');
         }else{
             let lang = queryParams.lang.toLowerCase();
             ['ru','en'].includes(lang)
                 ? setLanguage(queryParams.lang)
-                : setLanguage('ru')
+                : setLanguage('en')
         }
     }, []); // useEffect будет запущен только при монтировании компонента
 

@@ -15,10 +15,18 @@ function LanguagePicker(props) {
         else if (language === 'uk') return "UA"
         else if (language === 'en') return "EN"
     }
+    const setLangQueryParam = (lang) => {
+        const newUrl = `${window.location.pathname}?lang=${lang}`;
+        // Заменяем текущий URL на новый URL с параметром lang
+        window.history.replaceState({}, '', newUrl);
+    };
 
     const setLang = (language) => {
         setClicked(false);
         changeLanguage(language);
+        console.log(language)
+        // setQueryParams({ lang: 'ru', page: 'home' });
+        setLangQueryParam(language);
     }
 
     return (

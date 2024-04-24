@@ -41,7 +41,7 @@ function GetOffer() {
             incorrectemail: "Формат указанной почты некорректный.",
             incorrectnum: "Формат указанного номера некорректный.",
             incorrectname: "Введено некорректное имя.",
-            success: "Успешно отправлено.",
+            success: "Успешно отправлено. Ожидайте, с вами свяжутся!",
             or: "ИЛИ"
         },
         en: {
@@ -58,7 +58,7 @@ function GetOffer() {
             incorrectemail: "Email is incorrect",
             incorrectnum: "Phone is incorrect.",
             incorrectname: "Name is incorrect",
-            success: "Successfully sent.",
+            success: "Successfully sent. Wait for someone to contact you!",
             or: "OR"
         }
     }
@@ -168,7 +168,7 @@ function GetOffer() {
                     <div className={classes.buttonform} onClick={() => getUserData()}>{translations[language].offer}</div>
                 </div>
                 {getErrors()}
-                {getMessage()}
+                {/*{getMessage()}*/}
             </div>
         }
     }

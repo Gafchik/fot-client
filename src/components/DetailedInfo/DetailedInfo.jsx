@@ -130,23 +130,23 @@ function DetailedInfo(props) {
                     {/*        {translations[language].getOffer}*/}
                     {/*    </div>*/}
                     {/*</div>*/}
-                    <div className={classes.ftpart}>
-                        <div style={{ marginTop: 50, marginBottom: -20 }}>
-                            <span className={classes.title}>{translations[language].titlebnb}</span>
-                        </div>
-                        <div>
-                            <div className={classes.list2}>
-                                <div className='hidden'><span style={{ transitionDelay: "0s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb1}</div>
-                                <div className='hidden'><span style={{ transitionDelay: "0.1s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb2}</div>
-                                <div className='hidden'><span style={{ transitionDelay: "0.2s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb3}</div>
-                                <div className='hidden'><span style={{ transitionDelay: "0.3s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb4}</div>
-                                <div className='hidden'><span style={{ transitionDelay: "0.4s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb5}</div>
-                            </div>
-                        </div>
-                        <div className={classes.secondary}>
-                            <span>{translations[language].totalbnb}</span>
-                        </div>
-                    </div>
+                    {/*<div className={classes.ftpart}>*/}
+                    {/*    <div style={{ marginTop: 50, marginBottom: -20 }}>*/}
+                    {/*        <span className={classes.title}>{translations[language].titlebnb}</span>*/}
+                    {/*    </div>*/}
+                    {/*    <div>*/}
+                    {/*        <div className={classes.list2}>*/}
+                    {/*            <div className='hidden'><span style={{ transitionDelay: "0s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb1}</div>*/}
+                    {/*            <div className='hidden'><span style={{ transitionDelay: "0.1s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb2}</div>*/}
+                    {/*            <div className='hidden'><span style={{ transitionDelay: "0.2s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb3}</div>*/}
+                    {/*            <div className='hidden'><span style={{ transitionDelay: "0.3s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb4}</div>*/}
+                    {/*            <div className='hidden'><span style={{ transitionDelay: "0.4s", color: 'rgb(7,188,12)', fontSize: 30 }}>✓</span> {translations[language].featurebnb5}</div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={classes.secondary}>*/}
+                    {/*        <span>{translations[language].totalbnb}</span>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>

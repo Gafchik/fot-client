@@ -85,7 +85,6 @@ function GetOffer() {
             if (containsNumbers(name)) {
                 setError(translations[language].incorrectname);
             }
-
             notifyManager(name, num, mail);
             scrollToCottagesAdditional();
             toast.success(translations[language].success);
@@ -113,12 +112,12 @@ function GetOffer() {
         }).then((response) => response.json())
             .then(data => setResult(data.message))
             .then(() => {
-                if (!isSafari) {
-                    var link = document.createElement('a');
-                    link.href = Doc;
-                    link.download = Doc.substr(Doc.lastIndexOf('/') + 1);
-                    link.click();
-                }
+                // if (!isSafari) {
+                //     var link = document.createElement('a');
+                //     link.href = Doc;
+                //     link.download = Doc.substr(Doc.lastIndexOf('/') + 1);
+                //     link.click();
+                // }
             });
     }
 

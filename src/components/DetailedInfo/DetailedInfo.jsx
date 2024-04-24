@@ -125,11 +125,11 @@ function DetailedInfo(props) {
                             </div>
                         </div>
                     </div>
-                    <div className={classes.buttonHolder}>
-                        <div onClick={scrollToOffer} className={classes.button}>
-                            {translations[language].getOffer}
-                        </div>
-                    </div>
+                    {/*<div className={classes.buttonHolder}>*/}
+                    {/*    <div onClick={scrollToOffer} className={classes.button}>*/}
+                    {/*        {translations[language].getOffer}*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className={classes.ftpart}>
                         <div style={{ marginTop: 50, marginBottom: -20 }}>
                             <span className={classes.title}>{translations[language].titlebnb}</span>

@@ -15,11 +15,11 @@ function Main(props) {
     return (
         <div>
             <Facing />
-            <Description />
-            <CardsSection />
-            <AboutUs />
-            <Gallery />
-            <StockCottages />
+            {/*<Description />*/}
+            {/*<CardsSection />*/}
+            {/*<AboutUs />*/}
+            {/*<Gallery />*/}
+            {/*<StockCottages />*/}
             <DetailedInfo />
             {/* <AnyQuestions /> */}
             <GetOffer />

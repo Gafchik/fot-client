@@ -60,21 +60,21 @@ function Footer() {
                         <span>2023 </span>
                         <span>© All rights reserved.</span>
                     </div> */}
-                    <div className={classes.additional}>
-                        <span className={classes.title}>{translations[language].contacts}</span>
-                        <div className={classes.contactsHolderIcons}>
-                            <div className={classes.iconHolder}>
-                                <a href="https://www.instagram.com/bio_cottege/" target="_blank">
-                                    <BsInstagram className={classes.inst} style={{ fontSize: 23 }} />
-                                </a>
-                                <a href="https://www.youtube.com/@OliveFamilyClub" target="_blank">
-                                    <BsYoutube className={classes.inst} style={{ fontSize: 30 }} />
-                                </a>
-                                {/* <FaTelegramPlane className={classes.telegram} style={{ fontSize: 30 }} /> */}
-                                {/* <FaTwitter className={classes.twitter} style={{ fontSize: 30 }} /> */}
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className={classes.additional}>*/}
+                    {/*    <span className={classes.title}>{translations[language].contacts}</span>*/}
+                    {/*    <div className={classes.contactsHolderIcons}>*/}
+                    {/*        <div className={classes.iconHolder}>*/}
+                    {/*            <a href="https://www.instagram.com/bio_cottege/" target="_blank">*/}
+                    {/*                <BsInstagram className={classes.inst} style={{ fontSize: 23 }} />*/}
+                    {/*            </a>*/}
+                    {/*            <a href="https://www.youtube.com/@OliveFamilyClub" target="_blank">*/}
+                    {/*                <BsYoutube className={classes.inst} style={{ fontSize: 30 }} />*/}
+                    {/*            </a>*/}
+                    {/*            /!* <FaTelegramPlane className={classes.telegram} style={{ fontSize: 30 }} /> *!/*/}
+                    {/*            /!* <FaTwitter className={classes.twitter} style={{ fontSize: 30 }} /> *!/*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
 
             </div>

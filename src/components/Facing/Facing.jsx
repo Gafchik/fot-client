@@ -35,8 +35,8 @@ function Facing() {
             btn: "УЗНАТЬ БОЛЬШЕ",
             aboutus: "О нас",
             cottages: "Коттеджи",
-            title: "Family Olive Club - ваш пассивный доход в течении сотен лет.",
-            sub1: "Оливковый бизнес и собственная недвижимость в Грузии",
+            title: "Family Olive Club - ликвидность вне времени!",
+            sub1: "Инвестируя в оливковые плантации, вы обеспечиваете своей семье стабильный пассивный доход на протяжении более 100 лет!",
             feat1: "Пассивный доход без необходимости оперативного вмешательства",
             feat2: "Опытная сервисная компания",
             feat3: "Прозрачная бизнес-модель",
@@ -47,8 +47,8 @@ function Facing() {
             btn: "DISCOVER MORE",
             aboutus: "About us",
             cottages: "Cottages",
-            title: "Family Olive Club - your passive income for hundreds of years.",
-            sub1: "Olive business and your own real estate in Georgia",
+            title: "Family Olive Club - liquidity beyond time!",
+            sub1: "By investing in olive plantations, you ensure a stable passive income for your family for over 100 years!",
             feat1: "Passive income without the need for operational intervention",
             feat2: "Experienced service company",
             feat3: "Transparent business model",
@@ -70,7 +70,7 @@ function Facing() {
                                 </div>
                                 <div className={classes.buttonsholder}>
                                     <div onClick={scrollToAboutus}>{translations[language].aboutus}</div>
-                                    <div onClick={scrollToCottages}>{translations[language].cottages}</div>
+                                    {/*<div onClick={scrollToCottages}>{translations[language].cottages}</div>*/}
                                 </div>
                             </div>
                             <LanguagePicker />

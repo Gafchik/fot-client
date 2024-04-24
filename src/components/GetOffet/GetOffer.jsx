@@ -41,7 +41,7 @@ function GetOffer() {
             incorrectemail: "Формат указанной почты некорректный.",
             incorrectnum: "Формат указанного номера некорректный.",
             incorrectname: "Введено некорректное имя.",
-            success: "Успешно отправлено.",
+            success: "Успешно отправлено. Ожидайте, с вами свяжутся!",
             or: "ИЛИ"
         },
         en: {
@@ -58,7 +58,7 @@ function GetOffer() {
             incorrectemail: "Email is incorrect",
             incorrectnum: "Phone is incorrect.",
             incorrectname: "Name is incorrect",
-            success: "Successfully sent.",
+            success: "Successfully sent. Wait for someone to contact you!",
             or: "OR"
         }
     }
@@ -113,12 +113,12 @@ function GetOffer() {
         }).then((response) => response.json())
             .then(data => setResult(data.message))
             .then(() => {
-                if (!isSafari) {
-                    var link = document.createElement('a');
-                    link.href = Doc;
-                    link.download = Doc.substr(Doc.lastIndexOf('/') + 1);
-                    link.click();
-                }
+                // if (!isSafari) {
+                //     var link = document.createElement('a');
+                //     link.href = Doc;
+                //     link.download = Doc.substr(Doc.lastIndexOf('/') + 1);
+                //     link.click();
+                // }
             });
     }
 
